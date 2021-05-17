@@ -9,17 +9,17 @@ import { Country } from '../../interfaces/pais.interface';
   ]
 })
 export class PorPaisComponent implements OnInit {
-  termino:string = "";
-  hasError: boolean = false;
-  paises: Country [] = [];
-  paisesSugeridos: Country [] = [];
+  public termino:string = "";
+  public hasError: boolean = false;
+  public paises: Country [] = [];
+  public paisesSugeridos: Country [] = [];
 
   constructor(private paisService: PaisService) { }
 
   ngOnInit(): void {
   }
 
-  buscar(termino: string) {
+  public buscar(termino: string) {
     this.hasError = false;
     this.termino = termino;
     
@@ -33,7 +33,7 @@ export class PorPaisComponent implements OnInit {
 
   }
 
-  sugerencias(termino: string) {
+  public sugerencias(termino: string) {
     this.hasError = false;
 
     this.paisService.getCountriesByName(termino)

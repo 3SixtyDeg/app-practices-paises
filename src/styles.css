@@ -1,3 +1,23 @@
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
 .cursor-pointer {
     cursor: pointer;
 }
@@ -8,4 +28,13 @@
 
 .psf {
     position: fixed;
+}
+
+.ddwm-custom {
+    width: 100%;
+    left: 0;
+}
+
+.col-r-custom {
+    position: relative;
 }

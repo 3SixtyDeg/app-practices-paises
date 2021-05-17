@@ -9,16 +9,16 @@ import { PaisService } from '../../services/pais.service';
   ]
 })
 export class PorCapitalComponent implements OnInit {
-    termino:string = "";
-    hasError: boolean = false;
-    paises: Country [] = [];
+    public termino:string = "";
+    public hasError: boolean = false;
+    public paises: Country [] = [];
   
     constructor(private paisService: PaisService) { }
   
     ngOnInit(): void {
     }
   
-    buscar(termino: string) {
+    public buscar(termino: string) {
       this.hasError = false;
       this.termino = termino;
       
@@ -32,7 +32,7 @@ export class PorCapitalComponent implements OnInit {
   
     }
   
-    sugerencias(termino: string) {
+    public sugerencias(termino: string) {
       this.hasError = false;
     }
 

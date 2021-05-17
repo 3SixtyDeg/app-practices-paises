@@ -9,11 +9,11 @@ import { Country } from '../../interfaces/pais.interface';
   ]
 })
 export class PorRegionComponent implements OnInit {
-  termino:string = '';
-  hasError: boolean = false;
-  paises: Country [] = [];
-  regiones : string[] = ['africa', 'americas', 'asia', 'europe', 'oceania'];
-  regionActiva: string = '';
+  public termino:string = '';
+  public hasError: boolean = false;
+  public paises: Country [] = [];
+  public regiones : string[] = ['africa', 'americas', 'asia', 'europe', 'oceania'];
+  public regionActiva: string = '';
   
   constructor(private paisService: PaisService) { }
 
@@ -24,7 +24,7 @@ export class PorRegionComponent implements OnInit {
     return (region=== this.regionActiva) ? 'btn btn-primary' : 'btn btn-outline-primary';
   }
   
-  buscar(termino: string) {
+  public buscar(termino: string) {
     this.hasError = false;
     this.termino = termino;
     
@@ -38,11 +38,11 @@ export class PorRegionComponent implements OnInit {
 
   }
   
-  sugerencias(termino: string) {
+  public sugerencias(termino: string) {
     this.hasError = false;
   }
 
-  activarRegion(region: string) {
+  public activarRegion(region: string) {
     this.regionActiva = region;
     this.buscar(region);
   }

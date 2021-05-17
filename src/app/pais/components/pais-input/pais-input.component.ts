@@ -15,8 +15,8 @@ export class PaisInputComponent implements OnInit {
   @Output() onDebounce: EventEmitter<string> = new EventEmitter();
   @Input() placeholder: string = '';
 
-  debouncer: Subject<string> = new Subject();
-  termino: string = '';
+  private debouncer: Subject<string> = new Subject();
+  public termino: string = '';
 
   constructor() { }
 
@@ -32,11 +32,11 @@ export class PaisInputComponent implements OnInit {
 
   }
 
-  buscar() {
+  public buscar() {
     this.onEnter.emit(this.termino);
   }
 
-  keyUp() {
+  public keyUp() {
     this.debouncer.next(this.termino);
   }
 
