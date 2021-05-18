@@ -2,7 +2,9 @@
   <div class="position-sticky pt-3">
     <ul class="nav flex-column">
       <li class="nav-item"
-          routerLink="">
+          routerLink=""
+          data-bs-toggle="collapse" 
+          data-bs-target=".collapse.show">
         <a class="nav-link cursor-pointer" 
           routerLinkActive="active"
           [routerLinkActiveOptions]="{ exact: true}">
@@ -11,7 +13,9 @@
         </a>
       </li>
       <li class="nav-item" 
-          routerLink="capital">
+          routerLink="capital"
+          data-bs-toggle="collapse" 
+          data-bs-target=".collapse.show">
         <a class="nav-link cursor-pointer" 
         routerLinkActive="active">
           <i class="bi bi-bookmark"></i>
@@ -19,7 +23,9 @@
         </a>
       </li>
       <li class="nav-item" 
-      routerLink="region">
+          routerLink="region"
+          data-bs-toggle="collapse" 
+          data-bs-target=".collapse.show">
         <a class="nav-link cursor-pointer" 
           routerLinkActive="active">
           <i class="bi bi-map"></i>

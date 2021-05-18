@@ -22,8 +22,10 @@ export class PorPaisComponent implements OnInit {
   public buscar(termino: string) {
     this.hasError = false;
     this.termino = termino;
-    
-    this.paisService.getCountriesByName(this.termino)
+
+    if (this.termino.trim() != '') {
+
+      this.paisService.getCountriesByName(this.termino)
       .subscribe((response) => {
         this.paises = response;
       }, (error) => {
@@ -31,17 +33,30 @@ export class PorPaisComponent implements OnInit {
         this.paises = [];
       });
 
+    } else {
+      this.paises = [];
+    }
+    
   }
 
   public sugerencias(termino: string) {
     this.hasError = false;
 
-    this.paisService.getCountriesByName(termino)
-    .subscribe((response)=> {
-      this.paisesSugeridos = response.splice(0, 5);
-    }, (error) => {
+    if (termino.trim() != '') {
+
+      this.paisService.getCountriesByName(termino)
+      .subscribe((response)=> {
+        this.paisesSugeridos = response.splice(0, 5);
+      }, (error) => {
+        this.paisesSugeridos = [];
+      });
+
+    } else {
       this.paisesSugeridos = [];
-    })
+    }
+    
+   
+
   }
 
 }

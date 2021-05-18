@@ -8,12 +8,22 @@
             </nav>
             <div class="row">
                 <div class="col">
-                    <button class="btn ms-3" 
+                    <div class="btn-group">
+                        <button class="btn" 
+                            [class]="getClassCss(region)" 
+                            *ngFor="let region of regiones"
+                            (click)="activarRegion(region)">
+                            {{region | titlecase}}
+                        </button>
+                      </div>
+
+
+                    <!-- <button class="btn ms-3" 
                         [class]="getClassCss(region)"
                         *ngFor="let region of regiones"
                         (click)="activarRegion(region)">
                         {{region | titlecase}}
-                    </button>
+                    </button> -->
                 </div>
             </div>
             <hr>

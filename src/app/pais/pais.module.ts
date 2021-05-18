@@ -17,7 +17,8 @@ import { PaisInputComponent } from './components/pais-input/pais-input.component
     PorPaisComponent, 
     PorRegionComponent, 
     VerPaisComponent, 
-    PaisTablaComponent, PaisInputComponent
+    PaisTablaComponent, 
+    PaisInputComponent
   ],
   imports: [
     CommonModule,

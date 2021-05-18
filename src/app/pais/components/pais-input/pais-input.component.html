@@ -1,5 +1,11 @@
 <form (ngSubmit)="buscar()" autocomplete="off">
-    <label for="buscar" class="form-label">Buscar: </label>
-    <input [(ngModel)]="termino" id="buscar" class="form-control" type="text" 
-        name="buscar" [placeholder]="placeholder" (keyup)="keyUp()"/>
+    <div class="input-group">
+        <input type="text" id="buscar" name="buscar" [(ngModel)]="termino" [placeholder]="placeholder" 
+        (input)="input()" class="form-control fc-custom py-2 border-right-0 border"/>
+        <span class="input-group-append igapp-f">
+            <div class="input-group-text bg-transparent igtxt-custom">
+                <i class="bi bi-x cursor-pointer" (click)="clear()"></i>
+            </div>
+        </span>
+    </div>
 </form>

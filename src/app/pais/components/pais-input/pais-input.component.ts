@@ -36,8 +36,12 @@ export class PaisInputComponent implements OnInit {
     this.onEnter.emit(this.termino);
   }
 
-  public keyUp() {
+  public input() {
     this.debouncer.next(this.termino);
   }
 
+  public clear() {
+    this.termino = '';
+    this.onDebounce.emit(this.termino);
+  }
 }

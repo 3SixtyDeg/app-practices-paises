@@ -1,53 +1,82 @@
 <div class="row">
     <div class="col">
         <div class="animate__animated animate__fadeIn">
+
             <div class="alert alert-info" *ngIf="!pais; else divPais">
                 Espere por favor...
             </div>
-            
             <ng-template #divPais>
-                <div class="row mb-3">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1>País: <small>{{pais.name}}</small></h1>
+                <div class="tile">
+                    <div class="wrapper">
+                        <div class="banner-img">
+                            <div id="mapa"></div>
                         </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-12 mb-3">
-                        <h3>Bandera:</h3>
-                        <img [src]="pais.flag" class="img-thumbnail">
-                    </div>
-                    <div class="col-lg-7 col-md-7 col-sm-12 mb-3">
-                        <h3>Información:</h3>
-                        <ul class="list-group">
+                        <div class="dates">
+                            <div class="start">
+                                <strong>PAÍS</strong> {{pais.name}}
+                                <span></span>
+                            </div>
+                            <div class="ends">
+                                <strong>CAPITAL</strong> {{pais.capital}}
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <div>
+                                <strong>NOMBRE NATIVO</strong> {{pais.nativeName}}
+                            </div>
+                            <div>
+                                <strong>GENTILICIO</strong> {{pais.demonym}}
+                            </div>
+                            <div>
+                                <strong>POBLACIÓN</strong> {{pais.population | number}}
+                            </div>
+                        </div>
+                        <div class="stats">
+                            <div>
+                                <strong>CÓDIGO NÚMERICO</strong> {{pais.numericCode}}
+                            </div>
+                            <div>
+                                <strong>REGIÓN</strong> {{pais.region}}
+                            </div>
+                            <div>
+                                <strong>SUBREGIÓN</strong> {{pais.subregion}}
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush">
                             <li class="list-group-item">
-                                <strong>Población</strong> {{pais.population | number}}
+                                <strong class="title-c mb-2">TRADUCCIONES:</strong>
+                                <h6>
+                                    <span class="badge bg-dark ms-2">{{pais.translations.de}}</span>
+                                    <span class="badge bg-dark ms-2">{{pais.translations.es}}</span>
+                                    <span class="badge bg-dark ms-2">{{pais.translations.fr}}</span>
+                                    <span class="badge bg-dark ms-2">{{pais.translations.ja}}</span>
+                                    <span class="badge bg-dark ms-2">{{pais.translations.it}}</span>
+                                    <span class="badge bg-dark ms-2">{{pais.translations.br}}</span>
+                                    <span class="badge bg-dark ms-2">{{pais.translations.pt}}</span>
+                                    <span class="badge bg-dark ms-2">{{pais.translations.nl}}</span>
+                                    <span class="badge bg-dark ms-2">{{pais.translations.hr}}</span>
+                                    <span class="badge bg-dark ms-2">{{pais.translations.fa}}</span>
+                                </h6>
                             </li>
                             <li class="list-group-item">
-                                <strong>Código númerico</strong> {{pais.numericCode}}
+                                <strong class="title-c mb-2">FRONTERAS:</strong>
+                                <h6><span class="badge bg-dark ms-2" *ngFor="let border of pais.borders">{{border}}</span></h6>
                             </li>
                             <li class="list-group-item">
-                                <strong>Código alpha3</strong> {{pais.alpha3Code}}
+                                <strong class="title-c mb-2">DOMINIOS DE INTERNET:</strong>
+                                <h6><span class="badge bg-dark ms-2" *ngFor="let domain of pais.topLevelDomain">{{domain}}</span></h6>
+                            </li>
+                            <li class="list-group-item">
+                                <strong class="title-c mb-2">CÓDIGOS DE LLAMADA:</strong>
+                                <h6><span class="badge bg-dark ms-2" *ngFor="let code of pais.callingCodes">{{code}}</span></h6>
+                            </li>
+                            <li class="list-group-item">
+                                <strong class="title-c mb-2">BANDERA:</strong>
+                                <img [src]="pais.flag" class="img-thumbnail float-left" height="200px" width="200px" alt="{{pais.name}}">
                             </li>
                         </ul>
                     </div>
-                </div>
-                <h3>Traducciones:</h3>
-                <div class="row mb-3">
-                    <div class="col">
-                        <span class="badge bg-primary ms-2">{{pais.translations.de}}</span>
-                        <span class="badge bg-primary ms-2">{{pais.translations.es}}</span>
-                        <span class="badge bg-primary ms-2">{{pais.translations.fr}}</span>
-                        <span class="badge bg-primary ms-2">{{pais.translations.ja}}</span>
-                        <span class="badge bg-primary ms-2">{{pais.translations.it}}</span>
-                        <span class="badge bg-primary ms-2">{{pais.translations.br}}</span>
-                        <span class="badge bg-primary ms-2">{{pais.translations.pt}}</span>
-                        <span class="badge bg-primary ms-2">{{pais.translations.nl}}</span>
-                        <span class="badge bg-primary ms-2">{{pais.translations.hr}}</span>
-                        <span class="badge bg-primary ms-2">{{pais.translations.fa}}</span>
-                    </div>
-                </div>
+                </div> 
             </ng-template>
         </div>
     </div>

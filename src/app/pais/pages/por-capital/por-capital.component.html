@@ -7,11 +7,19 @@
                 </ol>
             </nav>
             <div class="row">
-                <div class="col">
+                <div class="col col-r-custom">
                    <app-pais-input 
                         (onEnter)="buscar($event)" 
                         (onDebounce)="sugerencias($event)"
-                        placeholder="Buscar capital..."></app-pais-input>
+                        placeholder="Buscar capital...">
+                    </app-pais-input>
+                    <div class="col-r-custom">
+                        <ul class="dropdown-menu show ddwm-custom" role="menu" *ngIf="paisesSugeridos.length > 0">
+                            <li *ngFor="let pais of paisesSugeridos">
+                                <a [routerLink]="['/pais', pais.alpha2Code]" class="dropdown-item" href="#">{{pais.name}}</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <hr>

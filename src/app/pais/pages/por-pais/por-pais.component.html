@@ -13,11 +13,13 @@
                         (onDebounce)="sugerencias($event)"
                         placeholder="Buscar país...">
                     </app-pais-input>
-                    <!-- <ul class="dropdown-menu show ddwm-custom" role="menu" *ngIf="paisesSugeridos.length > 0">
-                        <li *ngFor="let pais of paisesSugeridos">
-                            <a [routerLink]="['/pais', pais.alpha2Code]" class="dropdown-item" href="#">{{pais.name}}</a>
-                        </li>
-                    </ul> -->
+                    <div class="col-r-custom">
+                        <ul class="dropdown-menu show ddwm-custom" role="menu" *ngIf="paisesSugeridos.length > 0">
+                            <li *ngFor="let pais of paisesSugeridos">
+                                <a [routerLink]="['/pais', pais.alpha2Code]" class="dropdown-item" href="#">{{pais.name}}</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <hr>
