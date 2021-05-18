@@ -21,7 +21,7 @@ export class PorRegionComponent implements OnInit {
   }
 
   getClassCss(region: string): string {
-    return (region === this.regionActiva) ? 'btn-outline-primary active' : 'btn-outline-primary';
+    return (region === this.regionActiva) ? 'btn btn-outline-primary active' : 'btn btn-outline-primary';
   }
   
   public buscar(termino: string) {
