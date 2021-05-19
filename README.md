@@ -7,22 +7,22 @@
 
 ---
 
-- [Demo 🖥️](#demo-🖥️)
-- [Comenzando 🚀](#comenzando-🚀)
-    - [Pre-requisitos 📋](#pre-requisitos-📋)
-    - [Instalación 🔧](#instalación-🔧)
-- [Despliegue 📦](#despliegue-📦)
-- [Construido con 🛠️](#construido-con-🛠️)
-    - [Temas abordados 📚](#temas-abordados-📚)
-- [Versionado 📌](#versionado-📌)
-- [Autores ✒️](#autores-✒️)
-- [Licencia 📄](#licencia-📄)
+- Demo 🖥️
+- Comenzando 🚀
+    - Pre-requisitos 📋
+    - Instalación 🔧
+- Despliegue 📦
+- Construido con 🛠️
+    - Temas abordados 📚
+- Versionado 📌
+- Autores ✒️
+- Licencia 📄
 
 ## Demo 🖥️
 
 ---
 
-[Ver demo](https://stackblitz.com/github/magranadosb/app-practices-paises)
+<a href="https://stackblitz.com/github/magranadosb/app-practices-paises" target="_blank">Ver demo</a>
 
 ## Comenzando 🚀
 
@@ -38,18 +38,18 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 ### Instalación 🔧
 
 ```
-$git clone https://github.com/magranadosb/app-practices-paises.git
+git clone https://github.com/magranadosb/app-practices-paises.git
 ```
 
 _Después de clonar el proyecto, ingresa a la carpeta creada app-practices-paises._
 
 ```
-$npm install
+npm install
 ```
 ## Despliegue 📦
 
 ```
-$ng serve -o
+ng serve -o
 ```
 
 ## Construido con 🛠️
@@ -90,4 +90,4 @@ También puedes mirar la lista de todos los [contribuyentes](https://github.com/
 
 ---
 
-Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para más detalles.
+Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE) para más detalles.
