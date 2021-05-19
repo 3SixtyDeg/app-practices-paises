@@ -5,8 +5,6 @@
 
 ## Tabla de contenidos
 
----
-
 - Demo 🖥️
 - Comenzando 🚀
     - Pre-requisitos 📋
@@ -20,13 +18,9 @@
 
 ## Demo 🖥️
 
----
-
 <a href="https://stackblitz.com/github/magranadosb/app-practices-paises" target="_blank">Ver demo</a>
 
 ## Comenzando 🚀
-
----
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
@@ -54,8 +48,6 @@ ng serve -o
 
 ## Construido con 🛠️
 
----
-
 * [Angular CLI v12](https://angular.io/) - Este proyecto se generó con la versión 11.0.5 de Angular CLI.
 * [Bootstrap v5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
@@ -74,20 +66,14 @@ ng serve -o
 
 ## Versionado 📌
 
----
-
 Se usa [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/magranadosb/app-practices-paises/tags).
 
 ## Autores ✒️
-
----
 
 * **Marco Antonio Granados** - *Trabajo Inicial* - [magranadosb](https://github.com/magranadosb)
 
 También puedes mirar la lista de todos los [contribuyentes](https://github.com/magranadosb/app-practices-paises/graphs/contributors) quíenes han participado en este proyecto. 
 
 ## Licencia 📄
-
----
 
 Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE) para más detalles.
