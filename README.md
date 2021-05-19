@@ -1,27 +1,93 @@
-# AppPracticesPaises
+# app-practices-paises
+> En esta aplicación se muestran los fundamentos de una aplicación SPA (Single Page Application). 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
+![](./src/assets/images/header.png)
 
-## Development server
+## Tabla de contenidos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+- [Demo 🖥️](#demo-🖥️)
+- [Comenzando 🚀](#comenzando-🚀)
+    - [Pre-requisitos 📋](#pre-requisitos-📋)
+    - [Instalación 🔧](#instalación-🔧)
+- [Despliegue 📦](#despliegue-📦)
+- [Construido con 🛠️](#construido-con-🛠️)
+    - [Temas abordados 📚](#temas-abordados-📚)
+- [Versionado 📌](#versionado-📌)
+- [Autores ✒️](#autores-✒️)
+- [Licencia 📄](#licencia-📄)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Demo 🖥️
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+[Ver demo](https://stackblitz.com/github/magranadosb/app-practices-paises)
 
-## Running unit tests
+## Comenzando 🚀
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
 
-## Running end-to-end tests
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Pre-requisitos 📋
+* [Angular CLI](https://angular.io/cli)
+* [NodeJS](https://nodejs.org/en/)
+* [GIT](https://git-scm.com)
 
-## Further help
+### Instalación 🔧
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+$git clone https://github.com/magranadosb/app-practices-paises.git
+```
+
+_Después de clonar el proyecto, ingresa a la carpeta creada app-practices-paises._
+
+```
+$npm install
+```
+## Despliegue 📦
+
+```
+$ng serve -o
+```
+
+## Construido con 🛠️
+
+---
+
+* [Angular CLI v12](https://angular.io/) - Este proyecto se generó con la versión 11.0.5 de Angular CLI.
+* [Bootstrap v5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+
+### Temas abordados 📚
+
+* Consumo de APIs
+* Componentes especializados
+* DebounceTime
+* Inputs
+* Rutas
+* RouterLink
+* RouterLinkActive
+* SwitchMap
+* Tipado de datos
+* [OpenLayers](https://openlayers.org/) - Facilita la colocación de un mapa dinámico en cualquier página web.
+
+## Versionado 📌
+
+---
+
+Se usa [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/magranadosb/app-practices-paises/tags).
+
+## Autores ✒️
+
+---
+
+* **Marco Antonio Granados** - *Trabajo Inicial* - [magranadosb](https://github.com/magranadosb)
+
+También puedes mirar la lista de todos los [contribuyentes](https://github.com/magranadosb/app-practices-paises/graphs/contributors) quíenes han participado en este proyecto. 
+
+## Licencia 📄
+
+---
+
+Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para más detalles.
