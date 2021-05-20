@@ -1,5 +1,5 @@
 # app-practices-paises
-> En esta aplicación se muestran los fundamentos de una aplicación SPA (Single Page Application). 
+> Listado de países.
 
 ![](./src/assets/images/header.png)
 
@@ -76,4 +76,4 @@ También puedes mirar la lista de todos los [contribuyentes](https://github.com/
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE) para más detalles.
+Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para más detalles.
