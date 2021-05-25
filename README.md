@@ -1,7 +1,7 @@
 <p align="center">
  <img width="100px" src="./src/assets/images/logo.png" align="center" alt="GitHub Readme Stats" />
  <h2 align="center">app-practices-paises</h2>
- <p align="center"> Estructura de directorios para medianos y grandes proyectos.</p>
+ <p align="center">Listado de países.</p>
 </p>
   <p align="center">
      <a href="https://github.com/magranadosb/app-practices-paises/graphs/contributors">
@@ -52,7 +52,7 @@
 &nbsp;
 ![](./src/assets/images/header.png)
 &nbsp;
- >Estructura de directorios para medianos y grandes proyectos.
+ > Listado de países.
 
 ## Construido con
 
